@@ -21,8 +21,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/order", orderRoutes);
 
 // DB connection
-mongoose.connect("mongodb://127.0.0.1:27017/veloura")
-  .then(() => console.log("MongoDB Connected ✅"))
+mongoose.connect("mongodb+srv://kathyayanichoudhari_db_user:kathy123@cluster0.8j8eedd.mongodb.net/?appName=Cluster0")
+  .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
 // test route
