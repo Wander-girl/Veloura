@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "baseURL: "https://veloura-qb7x.onrender.com/api",",
 });
 
 // 🔐 ADD TOKEN AUTOMATICALLY
