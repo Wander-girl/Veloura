@@ -21,7 +21,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/order", orderRoutes);
 
 // DB connection
-mongoose.connect("mongodb+srv://kathyayanichoudhari_db_user:kathy123@cluster0.8j8eedd.mongodb.net/veloura?retryWrites=true&w=majority")
+mongoose.connect(mongoose.connect(process.env.MONGO_URI))
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
